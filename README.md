@@ -4,6 +4,10 @@
 + Only works in debug mode by now. 
 + It will crash when compile release version, I didn't find out why.
 
+delphi Version from [tec27](https://github.com/tec27/APMAlert)
+some C++ code from [tec27](https://github.com/tec27/ObsGraph)
+thanks tec27
+
 # 说明
 
 将delphi版本的bwl插件翻译成VC版本
