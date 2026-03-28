@@ -1,6 +1,6 @@
 ; APMAlert.def : Declares the module parameters for the DLL.
 
-LIBRARY      "APMAlert"
+LIBRARY      "APMAlertC"
 DESCRIPTION  'APMAlert Windows Dynamic Link Library'
 
 EXPORTS

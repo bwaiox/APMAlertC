@@ -82,6 +82,23 @@ int STARCRAFTBUILD = 13;
 int PluginMajor = 1;
 int PluginMinor = 0;
 
+/*E_STARCRAFTBUILD{
+      BUILD_0 = 1.04,              
+      BUILD_1 = 1.08b,
+      BUILD_2 = 1.09b,
+      BUILD_3 = 1.10,
+      BUILD_4 = 1.11b,
+      BUILD_5 = 1.12b,
+      BUILD_6 = 1.13f,
+      BUILD_7 = 1.14,
+      BUILD_8 = 1.15,
+      BUILD_9 = 1.15.1,
+      BUILD_10 = 1.15.2,
+      BUILD_11 = 1.15.3,
+      BUILD_12 = 1.16.0,
+      BUILD_13 = 1.16.1,
+}*/
+
 
 extern "C" void GetPluginAPI(TBWL_ExchangeData* Data)
 {

@@ -92,6 +92,7 @@ void BWUtil::AddPatch2(DWORD dAddr, DWORD dJmpTo, byte exxarg, int whenrun)
     p->jmpTo = dJmpTo;
     p->origMemory = new byte[5];
     p->newMemory = new byte[needmem];
+	p->numNops = 0;
     memset(p->newMemory, 0x90, needmem); // fill with nop
     DWORD oldprot;
     VirtualProtect((LPVOID)p->newMemory, needmem, PAGE_EXECUTE_READWRITE, &oldprot);
@@ -206,7 +207,7 @@ void BWUtil::UnPatch()
 	std::vector<PatchedMem*>::iterator it2;
 	for (it2 = m_patchedMemVec.begin(); it2 != m_patchedMemVec.end(); it2++)
 	{
-		WriteMem((*it2)->addr, (DWORD)&(*it2)->origMemory, (*it2)->memLength);
+		WriteMem((*it2)->addr, (DWORD)(*it2)->origMemory, (*it2)->memLength);
 	}
 	patchflag = false;
 	CLogger::getinstance()->log("UnPatched game");

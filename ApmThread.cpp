@@ -112,8 +112,8 @@ int CApmThread::Init()
 
 	const unsigned short refreshMem1 = 0x9090;
 	const unsigned short refreshMem2 = 0x04EB;
-	//putil->AddPatchMem(PTCH_TEXTREFRESH1, (byte*)&refreshMem1, 2);
-	//putil->AddPatchMem(PTCH_TEXTREFRESH2, (byte*)&refreshMem2, 2);
+	putil->AddPatchMem(PTCH_TEXTREFRESH1, (byte*)&refreshMem1, 2);
+	putil->AddPatchMem(PTCH_TEXTREFRESH2, (byte*)&refreshMem2, 2);
     
     for (int i = 0; i < 12; i++)
     {
